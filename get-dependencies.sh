@@ -7,11 +7,9 @@ ARCH=$(uname -m)
 echo "Installing package dependencies..."
 echo "---------------------------------------------------------------"
 pacman -Syu --noconfirm    \
-    pipewire-audio         \
-    pipewire-jack          \
-    python                 \
-    python-pyqt6-webengine \
-    qt6-webengine
+    pipewire-audio \
+    pipewire-jack  \
+    python
 
 echo "Installing debloated packages..."
 echo "---------------------------------------------------------------"
